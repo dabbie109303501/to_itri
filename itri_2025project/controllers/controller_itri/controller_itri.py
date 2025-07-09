@@ -380,9 +380,9 @@ while supervisor.step(timestep) != -1:
             # 設定下一個位置
             for n, motor in enumerate(motors):
                 motor.setPosition(angles[n+1])
-                if n==5:
-                    # print(angles[n+1])
-                    motor.setPosition(0)
+                # if n==5:
+                #     # print(angles[n+1])
+                #     motor.setPosition(0)
 
         step_counter += 1
 
